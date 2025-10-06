@@ -1,0 +1,27 @@
+# =============================
+# 🐍 Python
+# =============================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# =============================
+# 📊 Parquet y datos
+# =============================
+# Ignora todo por defecto...
+*
+
+# ...excepto estos archivos y carpetas
+!.gitignore
+!requirements.txt
+!Procfile
+!README.md
+!app.py
+!update_metrics.py
+!schema.sql
+
+# No ignores la carpeta data (la necesitamos en Render)
+!data/
+!data/*.parquet
